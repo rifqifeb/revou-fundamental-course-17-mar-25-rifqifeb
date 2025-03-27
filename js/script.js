@@ -1,0 +1,1 @@
+//ini Java scriot external

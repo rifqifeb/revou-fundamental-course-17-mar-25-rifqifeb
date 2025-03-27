@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik - Rifqifeb </title>
+
+    <!-- CSS External-->
+     <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+    <!-- header -->
+    <header class="main-header">
+        <h1>Katik (Kalkulator Matematika)</h1>
+    </header>
+
+    <!-- main -->
+    <main>
+        <header> 
+            
+            <h1>Welcome To Katik</h1>
+        </header>
+
+        <p>Halo, Sobat Matematika! 👋 </p>
+        <p>alat sederhana dan praktis untuk menghitung keliling dan luas persegi dengan cepat dan akurat.
+            
+            Masukkan angka, klik hitung, dan dapatkan hasil instan! 🚀 Semoga KATIK membantu memudahkan perhitungan matematikamu.</p>
+    <!-- Navigasi Fitur -->
+        <div class="nav-fitur">
+            <a href="" class="nav-fitur-active">Persegi</a>
+            <a href="" class="nav-fitur-non-active">Persegi Panjang</a>
+        </div>
+       
+
+         </div>
+
+        <!-- Section luas -->
+        <section> 
+        <section>
+            <header class="section-header">
+                <h>Luas Persegi</h>
+            </header>
+
+            <!-- Gambar Luas -->
+            <div class="image-container">
+                <img src="assets/Persegi.jpg" alt="Gambar persegi">
+            </div>
+
+             <!-- konten perhitungan -->
+              <div class="calculate-content"></div>
+         </section>
+
+         <!-- Section Keliling -->
+          <section>
+            <header class="section-header">
+                <h>Keliling Persegi</h>
+            </header>
+
+            <!-- Gambar Keliling -->
+            <div class="image-container">
+                <img src="assets/Persegi.jpg" alt="Gambar persegi">
+            </div>
+
+            <!-- konten perhitungan -->
+            <div class="calculate-content"></div>
+          </section>
+
+          <script>
+            function hitungLuasPersegi() {
+                let sisi = document.getElementById('sisi').value;
+                let luas = sisi * sisi;
+                document.getElementById('hasilLuas').innerText = "Luas: " + luas;
+            }
+    
+            function hitungKelilingPersegi() {
+                let sisi = document.getElementById('sisi').value;
+                let keliling = 4 * sisi;
+                document.getElementById('hasilKeliling').innerText = "Keliling: " + keliling;
+            }
+        </script>
+    
+           <main>
+            <section>
+                <p>Luas dan Keliling Persegi</p>
+                <label for="sisi">Sisi:</label>
+                <input type="number" id="sisi" placeholder="Masukkan sisi">
+                <button onclick="hitungLuasPersegi()">Hitung Luas</button>
+                <button onclick="hitungKelilingPersegi()">Hitung Keliling</button>
+                <p id="hasilLuas"></p>
+                <p id="hasilKeliling"></p>
+            </section>
+        </main>
+
+        
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Made by Rifqifeb@2025</p>
+    </footer>
+</body>
+</html>
